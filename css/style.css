@@ -1,5 +1,5 @@
 header{
-	background-color: red;
+	/*background-color: red;*/
 }
 
 .logo {
@@ -8,11 +8,32 @@ header{
 }
 .menu-nav {
 	float: right;
+	margin-right: 40px;
+}
+header::after {
+	content: "";
+	clear: both;
+	display: inline-block;
 }
 .clear {
 	clear: both;
 }
-
+li::after {
+	content: "text";
+	background: blue;
+	font-size: 24px;
+	color: pink;
+}
+li::before {
+	content: "";
+	background: green;
+	height: 30px;
+	width: 5px;
+	display: inline-block;
+}
+li a {
+	font-size: 35px;
+}
 
 
 .container h3 {
